@@ -126,7 +126,7 @@ jobs:
       - checkout
       - node/install
       - run:
-          name: "Che4ck Versions"
+          name: "Check Versions"
           command: |
             go version
             node --version
