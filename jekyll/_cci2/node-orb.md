@@ -71,7 +71,7 @@ A [job][doc-job] is a collection of steps that run sequentially in the same exec
 
 This line is the first time we get to use the Node orb.
 Instead of manually specifying an [executor][doc-executor] and image to use, the Node orb provides a "default" executor for us to us.
-This default executor is the CircleCI Node.js Docker image.
+This default executor is the CircleCI [Node.js Docker image][node-img].
 
 ```yaml
     steps:
@@ -108,7 +108,7 @@ This should be a good starting point for your Node.js app.
 
 In the example config above, we used an executor that was provided by the Node orb.
 This executor is a Node.js Docker image that includes Node.js pre-installed.
-The Node orb makes installing Node.js in an environment that doesn't already have it very easier.
+The Node orb makes installing Node.js in an environment that doesn't already have it very easy.
 
 For example, let's say we had a Go project that also needs Node.js installed.
 We can use the Go (Golang) Docker image and use the Node orb in order to install Node.js in that image.
@@ -138,3 +138,4 @@ jobs:
 [doc-version]: {{ site.baseurl }}/2.0/configuration-reference/#version
 [doc-job]: {{ site.baseurl }}/2.0/configuration-reference/#jobs
 [doc-executor]: {{ site.baseurl }}/2.0/executor-types/
+[node-img]: https://hub.docker.com/r/circleci/node
